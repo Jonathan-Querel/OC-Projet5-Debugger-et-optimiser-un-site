@@ -3,7 +3,7 @@
 <head>
 	<Cache-Control: max-age=31536000>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><!--rajout du maximum scale-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
@@ -14,6 +14,7 @@
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
 	<title>Nina Carducci - Photographe professionnel</title><!--rajout de cet balise-->
+	<meta name="robots" data-react-helmet="true" content="index"><!--rajout de cet balise-->
 	<meta name="description" content="Donnez vie à vos souvenirs avec les services de photographie professionnelle 
 	réalisé par Nina Carducci à Bordeaux. Nous capturons vos moments les plus précieux avec notre expertise en shooting photo, 
 	retouche et album photo personnalisé. Contactez-nous dès aujourd'hui pour créer des souvenirs intemporels !"><!--rajout de cet balise-->
@@ -80,7 +81,7 @@
 </div>
 <section><!--rajout de cet balise-->
 <div id="gallery">
-	<h3 class="title">Portfolio</h3>
+	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
 			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-min.jpg" alt="Aaron Paul"/><!--rajout de l'atribut alt-->
@@ -98,7 +99,7 @@
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+				<h3 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h3><!--Mofication balise H1 en H3-->
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
@@ -117,7 +118,7 @@
 			</div>
 			<div class="service__price">
 				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span>
+				<p>Matériel, déplacement inclus</p><!--Mofication balise span en p-->
 			</div>
 
 		</div>
@@ -128,7 +129,7 @@
 			</div>
 			<div class="service__price">
 				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
+				<p>2 AR par photo</p><!--Mofication balise span en p-->
 			</div>
 		</div>
 		<div class="service">
@@ -138,7 +139,7 @@
 			</div>
 			<div class="service__price">
 				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
+				<p>30 pages recto/verso</p><!--Mofication balise span en p-->
 			</div>
 		</div>
 	</div>
@@ -147,7 +148,7 @@
 <div class="quote">
 	<figure>
 		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+			<h3 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h3><!--Mofication balise h1 en h3-->
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
