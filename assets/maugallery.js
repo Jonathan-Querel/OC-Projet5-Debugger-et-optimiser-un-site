@@ -169,7 +169,7 @@
           ? t.prepend(s)
           : console.error(`Unknown tags position: ${e}`);
       },
-      filterByTag() {
+      filterByTag(a) {
         if (!a(this).hasClass("active-tag")) {
           a(".active-tag").removeClass("active active-tag"),
             a(this).addClass("active-tag");
