@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/styleold.css">
+	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
 	<script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
@@ -37,7 +37,7 @@ réalisé par Nina Carducci à Bordeaux.">
 
 
 	<script type="application/ld+json">
-		{
+		{	
 			"@context": "http://schema.org",
 			"@type": "LocalBusiness",
 			"name": "Nina Carducci",
@@ -52,7 +52,19 @@ réalisé par Nina Carducci à Bordeaux.">
 				"streetAddress": "68 avenue Alsace-Lorraine",
 				"addressLocality": "Bordeaux",
 				"postalCode": "33200",
-				"addressCountry": "France"
+				"addressCountry": "FR"
+			},
+			"openingHours": {
+				"@type": "openingHours",
+				"dayOfWeek": [
+					"Mo",
+					"Tu",
+					"We",
+					"Th",
+					"Fr"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
 			}
 		}
 	</script>
@@ -69,7 +81,7 @@ réalisé par Nina Carducci à Bordeaux.">
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" alt="Logo instagram" width="30" height="30" aria-label="Lien vers instagram"></a></li><!--rajout de l'attribut alt-->
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Logo instagram" aria-label="Lien vers instagram"></a></li><!--rajout de l'attribut alt-->
 		</ul>
 	<!--</div>-->
 </nav>
@@ -213,7 +225,7 @@ réalisé par Nina Carducci à Bordeaux.">
 			</form>
 		</div>
 		<div class="picture right">
-			<img class="photocamera" src="./assets/images/camera.webp" alt="Appareil photo" ><!--rajout de l'atribut alt-->
+			<img src="./assets/images/camera.png" alt="Appareil photo" ><!--rajout de l'atribut alt-->
 		</div>
 	</div>
 </div>
