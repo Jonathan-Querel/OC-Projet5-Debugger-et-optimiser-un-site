@@ -69,17 +69,8 @@ body {
 }
 
 .picture img {
-	width: 100%;
-}
-
-.photonina {
-	width: 100%;
-	height: auto;
-}
-
-.photocamera {
-	width: 100%;
-	height: auto;
+	width: 450px;
+	height: 450px;
 }
 
 #about-me {
