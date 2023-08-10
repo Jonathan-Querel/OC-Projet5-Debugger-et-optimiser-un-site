@@ -1,7 +1,7 @@
 !(function (a) {
   (a.fn.mauGallery = function (t) {
-    t = a.extend(a.fn.mauGallery.defaults, t);
-    var e = [];
+    var t = a.extend(a.fn.mauGallery.defaults, t),
+      e = [];
     return this.each(function () {
       a.fn.mauGallery.methods.createRowWrapper(a(this)),
         t.lightBox &&
@@ -133,25 +133,34 @@
           a(".lightboxImage").attr("src", a(s).attr("src"));
       },
       createLightBox(a, t, e) {
-        a.append(
-          `<div class="modal fade" id="${
-            t || "galleryLightbox"
-          }" tabindex="-1" role="dialog" aria-hidden="true">\n                <div class="modal-dialog" role="document">\n                    <div class="modal-content">\n                        <div class="modal-body">\n                            ${
-            e
-              ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>'
-              : '<span style="display:none;" />'
-          }\n                            <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>\n                            ${
-            e
-              ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>'
-              : '<span style="display:none;" />'
-          }\n                        </div>\n                    </div>\n                </div>\n            </div>`
-        );
+        a.append(`<div class="modal fade" id="${
+          t || "galleryLightbox"
+        }" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            ${
+                              e
+                                ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>'
+                                : '<span style="display:none;" />'
+                            }
+                            <img class="lightboxImage img-fluid" alt="Contenu de l'image affich\xe9e dans la modale au clique"/>
+                            ${
+                              e
+                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>'
+                                : '<span style="display:none;" />'
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>`);
       },
       showItemTags(t, e, l) {
         var i =
           '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
         a.each(l, function (a, t) {
-          i += `<li class="nav-item active">\n                <span class="nav-link"  data-images-toggle="${t}">${t}</span></li>`;
+          i += `<li class="nav-item active">
+                <span class="nav-link"  data-images-toggle="${t}">${t}</span></li>`;
         });
         var s = `<ul class="my-4 tags-bar nav nav-pills">${i}</ul>`;
         "bottom" === e
@@ -167,8 +176,10 @@
           var t = a(this).data("images-toggle");
           a(".gallery-item").each(function () {
             a(this).parents(".item-column").hide(),
-              ("all" === t || a(this).data("gallery-tag") === t) &&
-                a(this).parents(".item-column").show(300);
+              "all" === t
+                ? a(this).parents(".item-column").show(300)
+                : a(this).data("gallery-tag") === t &&
+                  a(this).parents(".item-column").show(300);
           });
         }
       },
